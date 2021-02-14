@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+		<title>Strona testowa</title>
+	<meta name="description" content="Strona www" />
+	<meta name="keywords" content="test, www, strona" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script src="skrypt.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+   <div class="container">
+	<div class="mySlides" style="display: block;">
+		<div class="numbertext">1/6</div>
+		<img src="img/slajd1.jpg" class="zdjecie"/>
+	</div>
+   
+   <div class="mySlides">
+		<div class="numbertext">2/6</div>
+		<img src="img/slajd2.jpg" class="zdjecie"/>
+	</div>
+	
+	<div class="mySlides">
+		<div class="numbertext">3/6</div>
+		<img src="img/slajd3.jpeg" class="zdjecie"/>
+	</div>
+	
+	<div class="mySlides">
+		<div class="numbertext">4/6</div>
+		<img src="img/slajd4.jpg" class="zdjecie"/>
+	</div>
+	
+	<div class="mySlides">
+		<div class="numbertext">5/6</div>
+		<img src="img/slajd5.jpg" class="zdjecie"/>
+	</div>
+	
+	<div class="mySlides">
+		<div class="numbertext">6/6</div>
+		<img src="img/slajd6.jpg" class="zdjecie"/>
+	</div>
+   
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+	<div class="caption-container">
+		<p id="caption">Slajd 1</p>
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			<img class="demo cursor active" src="img/slajd1.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Slajd 1"/>
+		</div>
+		
+		<div class="column">
+			<img class="demo cursor" src="img/slajd2.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Slajd 2"/>
+		</div>
+		
+		<div class="column">
+			<img class="demo cursor" src="img/slajd3.jpeg" style="width: 100%" onclick="currentSlide(3)" alt="Slajd 3"/>
+		</div>
+		
+		<div class="column">
+			<img class="demo cursor" src="img/slajd4.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Slajd 4"/>
+		</div>
+		
+		<div class="column">
+			<img class="demo cursor" src="img/slajd5.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Slajd 5"/>
+		</div>
+		
+		<div class="column">
+			<img class="demo cursor" src="img/slajd6.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Slajd 6"/>
+		</div>
+	</div>
+	
+   </div>
+</body>
+</html>

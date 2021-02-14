@@ -1,0 +1,55 @@
+@media(max-width: 768px){
+    .topLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .topIcons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+    .somethingInTitleDiv{
+        width: 30px;
+        height: 25px;
+    }
+    .rightInTitleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0 0 0;
+    }
+    .leftInTitleDiv{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+    .titleUnderCarousel h4{
+    width: 30%;
+}
+
+.titleLeft{
+    width: 35%;
+}
+
+.titleRight{
+    width: 35%;
+}
+}
+
+@media(max-width: 768px){
+    .bigButton a{
+        font-size: 20px;
+    }
+    
+    bigInscription{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}

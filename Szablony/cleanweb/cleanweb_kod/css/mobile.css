@@ -1,0 +1,95 @@
+@media(max-width: 992px){
+    .navLinks{
+        display: none;
+    }
+    .navLinksResponsive{
+        display: block;
+    }
+}
+
+@media(max-width: 768px){
+    .navLinksResponsive{
+        text-align: center;
+        padding: 15px 10px;
+    }
+    .navLinksResponsive > .dropdown >.dropdown-menu{
+    left: 30%;
+    }
+}
+
+@media(max-width: 768px){
+    .topLinks{
+    justify-content: center;
+    }
+    .topForm{
+        display: flex;
+        justify-content: center;
+    }
+    .topForm form{
+    width: 60%;
+    }
+}
+
+@media(max-width: 768px){
+    .pageTitle{
+        text-align: center;
+    }
+}
+
+@media(max-width: 992px){
+    .left.carousel-control{
+    top: 100%;
+    left: 76%;
+    }
+    .carousel-indicators{
+    top: 100%;
+    width: 30%;
+    left: 73%;
+    height: 10px;
+    margin: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .carousel-indicators > li{
+    height: 15px;
+    width: 15px;
+    }
+    .carousel-indicators{
+    top: 99%;
+    width: 20%;
+    left: 80%;
+    height: 15px;
+    margin: 0;
+    }
+    .carousel-indicators > li.active{
+    height: 15px;
+    width: 15px;
+    }
+    .left.carousel-control{
+    left: 80%;
+    }
+    .item img{
+    min-height: 80vh;
+    }
+}
+
+@media(max-width: 560px){
+    .left.carousel-control{
+    top: 100%;
+    left: 70%;
+    }
+    .carousel-indicators{
+    top: 99%;
+    width: 25%;
+    left: 73%;
+    height: 15px;
+    margin: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .socialMedia p{
+    width: 25%;
+    }
+}

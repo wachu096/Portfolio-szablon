@@ -1,0 +1,509 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Slabo 27px', serif;
+}
+
+.topDiv{
+    border-bottom: 2px solid #cc3b68;
+    padding: 10px 0;
+}
+
+.fa-wifi{
+    transform: rotate(45deg);
+}
+
+.topIcons > a > .icon{
+    float: left;
+    background-color: lightgray;
+    color: #f1f1f1;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.topIcons > a > .icon:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.topLinks{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    height: inherit;
+    padding: 13px 0;
+}
+
+.topLinks a{
+    color: #cc3b68;
+    border-right: 1px solid #912a4a;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.topLinks a:last-child{
+    border-right: none;
+}
+/*----------------------------------------------------------*/
+
+
+.titleDiv{
+    background-color: #efeded;
+    padding: 7% 0 15% 0;
+    position: relative;
+}
+
+.somethingInTitleDiv{
+    background-color: #cc3b68;
+    color: white;
+    position: absolute;
+    right: 3%;
+    top: 0;
+    width: 40px;
+    height: 35px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.somethingInTitleDiv span{
+    border-bottom: 1px solid white;
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span.bigLetter{
+    font-size: 5rem;
+}
+
+.leftInTitleDiv h1{
+    text-transform: uppercase;
+    margin: 0;
+    float: left;
+    border-right: 1px solid gray;
+    padding-right: 5px;
+}
+
+.leftInTitleDiv p.rightFromH1{
+    color: gray;
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 0 8px 5px;
+    margin: 0;
+}
+
+.rightInTitleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0;
+    padding: 9px 3% 9px 0;
+}
+
+.rightInTitleDiv input[type=text]{
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    width: 45%;
+}
+
+.rightInTitleDiv input[type=submit]{
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    background-color: #cc3b68;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.rightInTitleDiv input[type=submit]:hover{
+    background-color: #9e2d50;
+}
+/*----------------------------------------------------------*/
+
+.aboveNav{
+    width: 97%;
+    margin: 0 auto;
+    margin-top: -10%;
+}
+
+.contentsNav{
+    background-color: #cc3b68;
+    margin: 0;
+    padding: 0;
+}
+
+.contentsNav > nav{
+    font-size: 0;
+}
+
+.contentsNav > nav a{
+    background-color: #cc3b68;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.contentsNav > nav a:hover{
+    background-color: #9e2d50;
+}
+/*----------------------------------------------------------*/
+
+.aboveSlider{
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.slider{
+    background-color: white;
+    padding: 40px;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 350px;
+    margin: 0 auto;
+}
+
+.carousel-caption{
+    width: 40%;
+    position: absolute;
+    left: 59%;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    bottom: 5%;
+    padding: 0;
+}
+
+ol.carousel-indicators{
+    position: absolute;
+    top: 103%;
+}
+
+ol.carousel-indicators > li{
+    height: 16px;
+    width: 16px;
+    background-color: #252526;
+    border: 4px solid #252526;
+}
+
+ol.carousel-indicators > li.active{
+    background-color: white;
+    height: 16px;
+    width: 16px;
+}
+/*----------------------------------------------------------*/
+
+.underCarousel{
+    width: 97%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.titleUnderCarousel{
+    display: flex;
+    align-items: center;
+}
+
+.titleUnderCarousel h4{
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 0 5px;
+    width: 14%;
+    text-transform: uppercase;
+}
+
+.titleLeft{
+    width: 43%;
+    background-color: #efeded;
+    padding: 3px;
+    float: left;
+}
+
+.titleRight{
+    width: 43%;
+    background-color: #efeded;
+    padding: 3px;
+    float: left;
+}
+/*----------------------------------------------------------*/
+
+.manyPictures{
+    width: 97%;
+    margin: 0 auto;
+}
+
+.inContentsPicture{
+    padding-bottom: 15px;
+}
+
+.inContentsPicture p{
+    color: gray;
+}
+
+.inContentsPicture h4{
+    color: #cc3b68;
+}
+
+.inContentsPicture img{
+    float: left;
+    height: 64px;
+    width: 64px;
+    margin: 10px;
+}
+/*----------------------------------------------------------*/
+
+.twoTitles{
+    width: 97%;
+    margin: 0 auto; 
+    padding: 15px 0;
+}
+
+.underTwoTitles h4{
+    text-transform: uppercase;
+    float: left;
+    margin: 0;
+    width: 30%;
+    text-align: center;
+}
+
+.underTwoTitles .titleLeft{
+    float: left;
+    width: 35%;
+}
+
+.underTwoTitles .titleRight{
+    float: left;
+    width: 35%;
+}
+
+.underTwoTitles .title{
+    display: flex;
+    align-items: center;
+}
+
+.underTwoTitles > .underTwoTitlesContent{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.underTwoTitles >.underTwoTitlesContent h3{
+    margin: 0;
+    font-size: 20px;
+}
+
+.underTwoTitles > .underTwoTitlesContent img{
+    float: left;
+    height: 128px;
+    width: 128px;
+    margin-right: 10px;
+}
+
+.underTwoTitles > .underTwoTitlesContent i{
+    color: #bcb8b8;
+    font-size: 50px;
+    padding-right: 10px;
+    float: left;
+}
+
+.underTwoTitles > .underTwoTitlesContent p.secondP{
+    float: right;
+}
+
+.underTwoTitles > .underTwoTitlesContent p{
+    padding-top: 10px;
+}
+
+.underTwoTitles > .underTwoTitlesContent a{
+    color: #cc3b68;
+}
+/*----------------------------------------------------------*/
+
+.bigMessage{
+    width: 97%;
+    margin: 0 auto;
+    background-color: #cc3b68;
+    border-radius: 7px;
+}
+
+.bigInscription{
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.bigInscription h4{
+    font-size: 16px;
+}
+
+.bigButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.bigButton a{
+    background-color: #f1f1f1;
+    font-size: 24px;
+    color: #cc3b68;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.bigButton a:hover{
+    background-color: #ccc9c9;
+}
+/*----------------------------------------------------------*/
+
+.footerSection{
+    background-color: #efeded;
+    border-top: 4px solid #c6c4c4;
+    border-bottom: 1px solid #c6c4c4;
+    margin-top: 40px;
+}
+
+.firstDivInFooter{
+    margin-bottom: 20px;
+}
+
+.firstDivInFooter h5, .secondDivInFooter h5, .thirdDivInFooter h5{
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.firstDivInFooter img{
+    height: 95px;
+    width: 95px;
+    float: left;
+    margin-right: 15px;
+}
+
+.firstDivInFooter h6{
+    color: #cc3b68;
+    font-size: 16px;
+}
+
+.firstDivInFooter p, .secondDivInFooter p{
+    color: gray;
+}
+
+.firstDivInFooter p::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.secondDivInFooter h5{
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.secondDivInFooter h6{
+    font-size: 14px;
+    font-weight: 700;
+    color: gray;
+    margin: 0;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+.secondDivInFooter > p > a{
+    color: #cc3b68;
+}
+
+.thirdDivInFooter input[type=text]{
+    border: none;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 7px;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.thirdDivInFooter input[name=message]{
+    height: 30vh;
+    display: flex;
+    align-items: flex-start;
+    word-break: break-all;
+}
+
+.thirdDivInFooter textarea{
+    width: 100%;
+    resize: none;
+    height: 20vh;
+    border: none;
+    font-size: 15px;
+    border-radius: 7px;
+    margin: 6px 0;
+    padding: 7px;
+}
+
+.thirdDivInFooter input[type=email]{
+    border: none;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 7px;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.thirdDivInFooter input[type=submit]{
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    background-color: #cc3b68;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.thirdDivInFooter input[type=submit]:hover{
+    background-color: #9e2d50;
+}
+/*----------------------------------------------------------*/
+
+.lastRow{
+    background-color: #efeded;
+}
+
+.lastRow footer{
+    padding: 20px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastRow footer p{
+    margin: 0;
+}

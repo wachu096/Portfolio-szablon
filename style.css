@@ -1,0 +1,653 @@
+/*-----------------------OGÓLNE-----------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #f1f1f1;
+	font-family: Calibri;
+}
+
+/*-----------------------NAWIGACJA-----------------------*/
+
+nav{
+	background-color: #f5f5f5;
+	width: 100%;
+	position: fixed;
+	font-size: 0;
+	z-index: 100;
+    height: auto;
+    top: 0;
+}
+
+#nav-right{
+	width: 70%;
+	text-align: right;
+	padding: 1%;
+	height: 3.5rem;
+    float: right;
+}
+
+#nav-right a{
+	text-decoration: none;
+	color: #6c6e70;
+	padding: 0.5rem 1.4rem;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+#nav-right:last-child{
+	padding-right: 2rem;
+}
+
+#nav-right a:hover{
+	border-bottom: 0.15vw solid red;
+	color: black;
+	transition: 0.2s;
+}
+
+.clicked{
+    border-bottom: 0.15vw solid red;
+	color: black;
+}
+@media(max-width: 768px){
+    .clicked{
+    border: none;
+    background-color: lightgray;
+    }
+}
+
+nav span.icon{
+  display: none;
+}
+
+@media(max-width: 768px){
+    #nav-right{display: none;}
+     nav span.icon{
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        color: gray;
+    }
+    
+    nav span.icon:hover{
+        color: black;
+        cursor: pointer;
+    }
+    
+    nav span.icon i{
+        font-size: 22px;
+    }
+    nav{
+        height: 3rem;
+    }
+}
+
+@media(max-width: 768px){
+     #nav-right.responsive{
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        background: #f5f5f5;
+        text-align: center;
+        padding: 0;
+        display: block;
+    }
+    
+    #nav-right.responsive a{
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    
+    #nav-right.responsive a:hover{
+        border: none;
+        background-color: lightgray;
+    }
+    
+   #nav-right.responsive span.closeNav{
+        display: block;
+        width: 10%;
+        border: none;
+        font-size: 27px;
+        float: right;
+        padding: 0;
+        margin: 5px 5px 5px 0;
+        cursor: pointer;
+        color: gray;
+    }
+    
+    #nav-right.responsive span.closeNav:hover{
+        background-color: #f5f5f5;
+        color: black;
+    }
+    
+}
+/*-----------------------NAGŁÓWEK-----------------------*/
+
+header{
+	background-image: url('img/img4.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    background-attachment: fixed;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	margin-top: 56px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-header{
+	font-family: 'Cormorant Garamond', serif;
+	color: hsla(0,0%,100%,.9);
+	padding: 0 18rem;
+	width: 100%;
+}
+
+.in-header h2{
+	font-size: 2rem;
+}
+
+.in-header h1{
+	font-size: 3.7rem;
+	padding: 2rem;
+}
+
+.in-header p{
+	font-size: 1.5rem;
+	line-height: 1.5;
+	color: lime;
+}
+
+@media(max-width: 1192px){
+	.in-header{
+		padding: 0 8rem;
+	}
+	.in-header h2{
+		font-size: 1.4rem;
+	}
+	.in-header h1{
+	font-size: 2.5rem;
+	padding: 1.5rem;
+	}
+	.in-header p{
+	font-size: 1.1rem;
+	line-height: 1.3;
+	}
+}
+
+@media(max-width: 768px){
+	.in-header{
+		padding: 0 6rem;
+	}
+	.in-header h2{
+		font-size: 1.1rem;
+	}
+	.in-header h1{
+	font-size: 2.1rem;
+	padding: 1rem;
+	}
+	.in-header p{
+	font-size: 0.9rem;
+	line-height: 1.2;
+	}
+}
+
+@media(max-width: 480px){
+	.in-header{
+		padding: 0;
+    }
+}
+/*-----------------------Główna treść strony-----------------------*/
+
+.about-me{   /*main div*/
+	margin: 0 auto;
+	height: auto;
+}
+
+.foto{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+.articles{
+	width: 100%;
+	height: 30rem;
+	background-color: #f2f2f2;
+}
+
+.foto img{
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	margin: 1rem 2rem 0 2rem;
+	border: 1px solid black;
+	 box-shadow: hsla(0, 0%, 0%, .55) 5px 5px 60px;
+}
+
+article{
+	width: 50%;
+	text-align: center;
+	float: left;
+	padding: 2rem 4rem;
+	height: 14rem;
+}
+
+article i{
+	font-size: 3rem;
+	color: #5a5b5b;
+	margin: 0.9rem;
+}
+
+article p{
+	font-size: 1.1rem;
+	line-height: 1.1;
+}
+
+article h2{
+	font-size: 1.6rem;
+}
+
+@media(max-width: 768px){
+	article{
+		float: none;
+		width: 100%;
+		height: 12rem;
+		padding: 1rem 2rem;
+	}
+	
+	.articles{
+		height: 50rem;
+	}
+    
+    .foto img{
+	height: 7rem;
+	width: 7rem;
+	border-radius: 50%;
+    }
+}
+
+.projects{  /*main div*/
+	background: linear-gradient(to bottom, #cfe7fa 0%,#6393c1 100%);
+	height: auto;
+    overflow: hidden;
+}
+/*-------------------------------------------------------------*/
+.actualProjects{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.containerProjects {
+  position: relative;
+  width: 33.3333%;
+  margin: 1%;
+  float: left;
+}
+
+.containerProjects img {
+  display: block;
+  width: 100%;
+  height: auto;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(28, 221, 60, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+    border-radius: 7px;
+}
+
+.containerProjects:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text a{
+  text-decoration: none;
+    font-size: 25px;
+    color: #4286f4;
+}
+
+.text a:hover{
+    text-decoration: underline;
+    color: #005aed;
+}
+
+@media(max-width: 768px){
+    .text a{
+        font-size: 16px;
+    }
+    .containerProjects {
+        width: 48%;
+    }
+}
+/*-------------------------------------------------------------*/
+.frames{
+	text-align: center;
+	display: inline-block;
+	margin: 1%;
+    box-shadow: 0 5px 20px #000000;
+    width: 30.5%;
+}
+
+.frames iframe{
+    width: 100%;
+    height: auto;
+}
+
+.napis{
+	font-size: 1.9vw;
+}
+
+.napis a{
+	text-decoration: none;
+	color: black;
+	opacity: 0.7;
+}
+
+.napis a:hover{
+	opacity: 1;
+}
+
+@media(max-width: 768px){
+    .frames{
+        height: 20vh;
+    }
+    .frames iframe{
+        height: 20vh;
+    }
+    .napis{
+	font-size: 2.5vw;
+    }
+}
+
+.in-projects-top{
+	text-align: center;
+	padding: 1rem 20rem;
+}
+
+.in-projects-top h2{
+	font-size: 2.5rem;
+}
+
+.in-projects-top p{
+	font-size: 1.2rem;
+	padding: 1rem;
+	line-height: 1.2;
+}
+
+@media(max-width: 1000px){
+	.in-projects-top{
+	padding: 1rem 5rem;
+  }
+}
+
+@media(max-width: 480px){
+    .in-projects-top{
+	padding: 1rem 2rem;
+  }
+    
+	.in-projects-top h2{
+	font-size: 1.5rem;
+  }
+}
+
+.contact{
+	text-align: center;
+	width: 100%;
+	height: auto;
+    overflow: hidden;
+}
+
+.contact img{
+    width: 40%;
+    height: 40vh;
+}
+
+.contact h2{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.contact-call{
+	float: left;
+	height: 12rem;
+    width: 33.33333%;
+	padding: 2rem;
+    overflow: hidden;
+}
+
+.contact-call h3, i{
+	font-size: 1.8rem;
+    padding-left: 0.3rem;
+}
+
+@media(max-width: 768px){
+    .contact-call{
+	float: none;
+	height: auto;
+    width: 100%;
+	padding: 1rem;
+    }
+    
+    .contact img{
+    width: 100%;
+    height: 15rem;
+    }
+}
+
+.call{
+    width: 100%;
+    padding: 1rem;
+}
+
+.call button{
+    padding: 0.4rem;
+    width: 4.5rem;
+    background-color: #3e79d8;
+    opacity: 0.8;
+    border-radius: 10px;
+    color: white;
+}
+
+.call button:hover{
+    opacity: 1;
+}
+
+.call p{
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.fa-facebook{
+	font-size: 2.7rem;
+	color: #3b5998;
+}
+
+.fa-phone{
+	font-size: 2.7rem;
+	color: #0a910e;
+}
+
+.fa-envelope{
+	font-size: 2.7rem;
+	color: #949696;
+}
+
+
+/*-----------------------STOPKA-----------------------*/
+
+footer{
+	background-color: #353535;
+	color: white;
+	font-size: 1.3rem;
+	text-align: center;
+	height: auto;
+    width: 100%;
+    overflow: hidden;
+	position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 200px;
+}
+
+.footerSection{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 1.3rem 1rem 1.3rem 5rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.toTop{
+    background-color: transparent;
+    width: 20%;
+    height: 100%;
+    float: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #cccccc;
+}
+
+.toTop .divButton{
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+}
+
+.toTop .divButton i{
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #cccccc;
+}
+
+.toTop .divButton i:hover{
+    color: rgba(0, 200, 0, 0.8);
+}
+
+.footerLinks{
+    width: 40%;
+    height: 100%;
+    float: left;
+    color: #cccccc;
+}
+
+.footerLinks h3{
+    padding-bottom: 10px;
+}
+
+.footerLinks a{
+    color: gray;
+    text-decoration: none;
+    padding-right: 5px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.footerLinks a:not(:last-child){
+    border-right: 1px solid gray;
+}
+
+.footerLinks a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+@media(max-width: 768px){
+    .toTop{
+        font-size: 18px;
+        width: 100%;
+        margin-top: 15px;
+        float: none;
+    }
+    .footerLinks{
+        width: 100%;
+        float: none;
+    }
+    footer{
+        display: block;
+    }
+}
